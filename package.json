@@ -19,7 +19,8 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "prettier": "prettier --tab-width=4 --trailing-comma=all --write 'src/**/*.js'"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -57,5 +58,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "prettier": "^1.18.2"
+  }
 }

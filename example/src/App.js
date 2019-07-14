@@ -6,7 +6,7 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ExampleComponent url='http://www.pdf995.com/samples/pdf.pdf' />
       </div>
     )
   }
